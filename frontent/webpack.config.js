@@ -13,14 +13,14 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /node-modules/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader'
         }
       },
       {
         test: /\.css$/,
-        exclude: /node-modules/,
+        exclude: /node_modules/,
         use: [
           { loader: 'style-loader' },
           { loader: 'css-loader' }
@@ -28,7 +28,7 @@ module.exports = {
       },
       {
         test: /.*\.(gif|png|jpe?g)$/i,
-        exclude: /node-modules/,
+        exclude: /node_modules/,
         use: {
           loader: 'file-loader'
         }
